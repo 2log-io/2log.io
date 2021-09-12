@@ -1,0 +1,21 @@
+[submodule "src/quickhub-core"]
+	path = src/quickhub-core
+	url = git@github.com:quickhub-project/quickhub-core.git
+[submodule "src/quickhub-pluginsystem"]
+	path = src/quickhub-pluginsystem
+	url = git@github.com:quickhub-project/quickhub-pluginsystem.git
+[submodule "src/2log-core"]
+	path = src/2log-core
+	url = git@github.com:2log-io/2log-core.git
+[submodule "src/2log-paydesk"]
+	path = src/2log-paydesk
+	url = git@github.com:2log-io/2log-paydesk.git
+[submodule "src/2log-cobot"]
+	path = src/2log-cobot
+	url = git@github.com:2log-io/2log-cobot.git
+[submodule "src/2log-servicehelper"]
+	path = src/2log-servicehelper
+	url = git@github.com:2log-io/2log-servicehelper.git
+[submodule "src/quickhub-rest"]
+	path = src/quickhub-rest
+	url = git@github.com:quickhub-project/quickhub-rest.git
