@@ -19,3 +19,6 @@
 [submodule "src/quickhub-rest"]
 	path = src/quickhub-rest
 	url = git@github.com:quickhub-project/quickhub-rest.git
+[submodule "src/2log-services"]
+	path = src/2log-services
+	url = git@github.com:2log-io/2log-services.git

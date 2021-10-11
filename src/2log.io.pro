@@ -22,6 +22,7 @@ SUBDIRS += quickhub-pluginsystem/QHPluginSystem.pro \
            2log-paydesk/2log-paydesk.pro \
            2log-cobot/2log-cobot.pro \
            2log-servicehelper/2log-servicehelper.pro \
+           2log-services/2log-services.pro \
            quickhub-core/QHCore.pro \
            quickhub-rest/QHRest.pro \
            main/main.pro
