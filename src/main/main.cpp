@@ -66,9 +66,5 @@ int main(int argc, char *argv[])
     }
 
     PluginManager::getInstance()->loadPlugins(parameters);
-    /*
-    new NRF24(&a);
-    new AutomationEngine(&a);
-    */
     return a.exec();
 }
