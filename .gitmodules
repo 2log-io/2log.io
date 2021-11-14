@@ -10,9 +10,6 @@
 [submodule "src/2log-paydesk"]
 	path = src/2log-paydesk
 	url = git@github.com:2log-io/2log-paydesk.git
-[submodule "src/2log-cobot"]
-	path = src/2log-cobot
-	url = git@github.com:2log-io/2log-cobot.git
 [submodule "src/2log-servicehelper"]
 	path = src/2log-servicehelper
 	url = git@github.com:2log-io/2log-servicehelper.git
