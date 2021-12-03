@@ -1,0 +1,25 @@
+version: '3'
+services:
+#------------------------------- 2log.io    
+    2log:
+      container_name: "2log.io"
+      image: registry.gitlab.com/frime/2log-io:main
+      environment:
+        - MONGODB_HOST=mongodb
+      volumes:
+        - ./2log.io/quickhub:/quickhub/
+      ports:
+        - 8080:8080
+        - 4711:4711
+      depends_on:
+        - mongodb
+#------------------------------- MongoDB
+    mongodb:
+      image: mongo:latest
+      container_name: "mongodb"
+      environment:
+        - MONGO_DATA_DIR=/data/db
+        - MONGO_LOG_DIR=/dev/null
+      volumes:
+        - ./2log.io/mongo:/data/db
+      command: mongod --logpath=/dev/null # --quiet
