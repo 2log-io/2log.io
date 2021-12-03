@@ -6,7 +6,7 @@ stages:
 variables:
   GIT_SUBMODULE_STRATEGY: recursive
 
-image: frime/quickhub-fablab-runtime
+image: frime/2log-buildenv
 
 build_2logserver:
   stage: build
