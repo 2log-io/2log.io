@@ -36,5 +36,4 @@ EXPOSE 8080
 ENV LD_LIBRARY_PATH="/root/build/bin/lib:/root/build/bin/plugins"
 ENTRYPOINT ["./root/build/bin/2log.io", "-f", "/quickhub/"]
 
-# build QuickHub
 
