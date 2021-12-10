@@ -8,6 +8,7 @@ services:
         - MONGODB_HOST=mongodb
       volumes:
         - ./2log.io/quickhub:/quickhub/
+        - QUICKLAB_DATA_DIR=/quickhub/
       ports:
         - 8080:8080
         - 4711:4711
