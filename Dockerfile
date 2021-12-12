@@ -8,6 +8,6 @@ RUN wget -c https://gitlab.com/Frime/2log-in/-/jobs/artifacts/main/download?job=
 RUN apt-get install unzip
 RUN unzip artifacts.zip && rm artifacts.zip
 RUN mv result wasm-ui
-ENV HTTP_DOCROOT="$PWD/wasm-ui
+ENV HTTP_DOCROOT="/wasm-ui"
 
 ENTRYPOINT ["./2log/2log.io", "-f", "/quickhub/"]
