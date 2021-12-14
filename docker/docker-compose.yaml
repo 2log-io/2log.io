@@ -1,14 +1,24 @@
 version: '3'
 services:
-#------------------------------- 2log.io    
+#------------------------------- 2log.io
     2log:
       container_name: "2log.io"
-      image: registry.gitlab.com/frime/2log-io:main
+      image: registry.gitlab.com/frime/2log-io:add-wasm-ui
       environment:
         - MONGODB_HOST=mongodb
-      volumes:
-        - ./2log.io/quickhub:/quickhub/
         - QUICKLAB_DATA_DIR=/quickhub/
+
+        #--------- Mail Server config
+        #- MAIL_HOST=smtp.mydomain.com
+        #- MAIL_USER=admin
+        #- MAIL_PASS=passwort
+        #- MAIL_ADDR=2log@mydomain.com //sender eMail address
+        #- MAIL_CONNECTION_TYPE=TLS // or SSL or TCP
+        #- MAIL_SENDER=2log.io // readable sender name (optional)
+        #- MAIL_PORT=587
+
+    volumes:
+        - ./2log.io/quickhub:/quickhub/
       ports:
         - 8080:8080
         - 4711:4711
