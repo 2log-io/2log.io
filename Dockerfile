@@ -9,5 +9,5 @@ RUN apt-get install unzip
 RUN unzip artifacts.zip && rm artifacts.zip
 RUN mv result wasm-ui
 ENV HTTP_DOCROOT="/wasm-ui"
-
+ENV QUICKLAB_DATA_DIR="/quickhub/"
 ENTRYPOINT ["./2log/2log.io", "-f", "/quickhub/"]

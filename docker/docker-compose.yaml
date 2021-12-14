@@ -6,8 +6,6 @@ services:
       image: registry.gitlab.com/frime/2log-io:add-wasm-ui
       environment:
         - MONGODB_HOST=mongodb
-        - QUICKLAB_DATA_DIR=/quickhub/
-
         #--------- Mail Server config
         #- MAIL_HOST=smtp.mydomain.com
         #- MAIL_USER=admin
