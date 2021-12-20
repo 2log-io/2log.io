@@ -2,7 +2,7 @@
 The 2log.io server - This is the root repository with all plugins as submodules.
 
 
-# License Notice
+## License Notice
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU Affero General Public License as published by
@@ -13,10 +13,12 @@ This program is distributed in the hope that it will be useful,
 but WITHOUT ANY WARRANTY; without even the implied warranty of
 MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 GNU Affero General Public License for more details.
-You should have received a copy of the GNU Affero General Public License
-along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 ## 3rd party 
+Free software lives from free software. 2log.io would not have been possible without the numerous small and large open source projects that were available to us.
+
+### QuickHub
+2log.io is a plugin collection for the QuickHub framework, which I released under the MPL for free use. please see www.quickhub.org for further information.
 
 ### Qt
 This software ist mainly based on Qt, the cross platform framework of my choice. It's using the following Qt Modules published under the terms of the LGPL / GPL v.2
