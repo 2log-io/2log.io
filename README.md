@@ -44,8 +44,7 @@ To take full advantage of 2log, you must have the hardware. But don't worry, the
 
 ### 2log Dot
 
-The 2log Dot is based on ESP32 and the PN532 RFID Card reader and can be easily built by yourself. Check out the appropriate repository for further informations.
-https://github.com/2log-io/2log-dot
+The 2log Dot is based on ESP32 and the PN532 RFID Card reader and can be easily built by yourself. Check out the appropriate repository (https://github.com/2log-io/2log-dot) for further informations.
 
 ### 2log Switch
 
@@ -70,7 +69,7 @@ Free software lives from free software. 2log.io would not have been possible wit
 2log.io is a plugin collection for the QuickHub framework, which I released under the MPL for free use. please see www.quickhub.org for further information.
 
 ### Qt
-This software ist mainly based on Qt, the cross platform framework of my choice. It's using the following Qt Modules published under the terms of the LGPL / GPL v.2
+This software ist mainly based on Qt (www.qt.io), the cross platform framework of my choice. It's using the following Qt Modules published under the terms of the LGPL / GPL v.2
 - QtCore
 - QtNetwork
 - QtWebsockets
@@ -81,16 +80,12 @@ This software ist mainly based on Qt, the cross platform framework of my choice.
 
 The frontend application (2log.in) is also provided as a WebAssembly compilation. The corresponding QPA WASM plugin from Qt is used under the terms of the GNU General Public License v. 3.
 
-Please visit www.qt.io for further information.
-
 ### QtWebApp by Stefan Frings
 
 Many thanks at this point to the great project "QtWebApp" by Stefan Frings (http://stefanfrings.de/qtwebapp/). His Qt based HTTP server is used in several places in 2log.io and does a great job. It's used under the terms of the LGPL.
 
 ### SMTP eMail by Tőkés Attila
 
-The integration was smooth and the code allows sending emails via encrypted SMTP.  2log.io uses this great library under the terms of the LGPL. Please read under
-https://github.com/bluetiger9/SmtpClient-for-Qtd for further information.
-
+The integration of SmtpClient-for-Qt (https://github.com/bluetiger9/SmtpClient-for-Qt) was smooth and the code allows sending emails via encrypted SMTP. 2log.io uses this great library under the terms of the LGPL.
 
 
