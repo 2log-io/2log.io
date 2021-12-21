@@ -24,7 +24,11 @@ All settings such as price, billing intervals and basic power consumption can be
 
 # Setup your own 2log instance
 
-2log is free and open source. The easiest way to set up your 2log instance is to use the Dockerfile provided in the repository. 
+2log is free and open source now. However, as long as there are no official release tags here, the open source version of 2log is still under construction.So there might be some puzzle pieces missing that are needed to run your own 2log instance.   Nevertheless I would be very happy if someone is interested in testing parts of the already released artifacts. Any feedback is highly appreciated! 
+
+## Docker
+
+The easiest way to set up your 2log instance is to use the Dockerfile provided in the repository. 
 First, make sure that Docker is installed with the associated tool docker-compose. 
 
 ```
