@@ -1,8 +1,57 @@
 # 2log.io
-The 2log.io server - This is the root repository with all plugins as submodules.
 
+2log is a free membership management system for workshops, fablabs, maker- and hackerspaces. It is a modular hardware and software solution that digitally links devices, users, processes and makes them remotely trackable. Each device with a power cable - from the laser cutter to the coffee machine - can be connected to your 2log instance with the 2log Switch within a few seconds.
 
-## License Notice
+Your advantages:
+- Protect your machines from unauthorized use thanks to individual usage
+authorizations.
+- Bill the machine running time precisely to the second - without bureaucratic overhead.
+- Transfer your existing machinery to 2log. No changes to the machines are necessary - the manufacturer‘s warranty for the equipment is retained.
+- Reduce your power consumption. Unused machines switch off automatically.
+- Receive statistics on the use of your machines. With 2log you can monitor the load in real time. You can see at any time who has been working on which machine when and where.
+- Use our app or the web platform to always have a full overview of the processes in your workshop.
+- Integrate 2log into your existing systems (e.g. CoBot).
+- Bill products like coffee or snacks with a self service terminal. 
+- Easy authentication via RFID cards
+
+## How it works 
+
+In order to integrate a machine into 2log, no structural changes need to be made. The 2log switch is simply plugged between the power plug of the machine and the socket. The setup process is so simple that you can easily do it yourself in minutes.
+
+![image](https://user-images.githubusercontent.com/51061627/146942192-8bc52edc-dbaf-4b9d-ba2d-ab2f555302c8.png)
+
+All settings such as price, billing intervals and basic power consumption can be made via the clear and easy-to-use web interface. Special knowledge or expensive trainings are not necessary.
+
+# Setup your own 2log instance
+
+2log is free and open source. The easiest way to set up your 2log instance is to use the Dockerfile provided in the repository. 
+First, make sure that Docker is installed with the associated tool docker-compose. 
+
+```
+mkdir ~/2log
+cd 2log
+wget https://raw.githubusercontent.com/2log-io/2log.io/main/docker/docker-compose.yaml
+docker-compose up
+```
+
+By default, the WebAssembly frontend can be reached via Port 8080. If the server is running on your local machine, just visit http://localhost:8080 in your web browser and the UI should come up. You can now login into your instancy by accessing the WebSocket service which is by default accessible via port 4711. To check your instance is up and just type `ws://localhost:4711`. The initial default login is "admin" with passwort "password". 
+
+Note: The frontend does currently _not_ work in mobile browsers. Since the frontend is written in Qt, it can easily be compiled as a native Android *.apk.  (Which is much cooler anyway).
+
+## Hardware 
+
+To take full advantage of 2log, you must have the hardware. But don't worry, the 2log hardware is based on easily obtainable components and can be built by yourself.
+
+### 2log Dot
+
+The 2log Dot is based on ESP32 and the PN532 RFID Card reader and can be easily built by yourself. Check out the appropriate repository for further informations.
+https://github.com/2log-io/2log-dot
+
+### 2log Switch
+
+The firmware we currently provide is based on the Shelly Plug S. However, it can be easily adapted to other sockets of similar design.
+
+# License Notice
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU Affero General Public License as published by
