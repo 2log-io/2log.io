@@ -1,3 +1,8 @@
+# THIS REPO IS OUTDATED!
+
+These repos are outdated and no longer maintained. We have moved all our repositories to Gitlab. You can find our new gitlab repos at www.2log.io.
+
+
 # 2log.io
 
 2log is a free membership management system for workshops, fablabs, maker- and hackerspaces. It is a modular hardware and software solution that digitally links devices, users, processes and makes them remotely trackable. Each device with a power cable - from the laser cutter to the coffee machine - can be connected to your 2log instance with the 2log Switch within a few seconds.
